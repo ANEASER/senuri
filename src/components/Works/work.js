@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './work.css';
 
-const Work = ({ images }) => {
+const Work = ({ images,title }) => {
   const [currentImage, setCurrentImage] = useState(0);
 
   const prevSlide = () => {
@@ -17,16 +17,18 @@ const Work = ({ images }) => {
   };
 
   return (
-    
-    <div className="image-slider">
-      <div className="slider-image">
-        <img src={images[currentImage]} alt={`Image ${currentImage + 1}`} />
+    <section id='work'>
+      <h4>{title}</h4>
+      <div className="image-slider">
+        <div className="slider-image">
+          <img src={images[currentImage]} alt={`Image ${currentImage + 1}`} />
+        </div>
+        <div className="slider-controls">
+          <button onClick={prevSlide}>Previous</button>
+          <button onClick={nextSlide}>Next</button>
+        </div>
       </div>
-      <div className="slider-controls">
-        <button onClick={prevSlide}>Previous</button>
-        <button onClick={nextSlide}>Next</button>
-      </div>
-    </div>
+    </section>
   );
 };
 

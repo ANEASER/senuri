@@ -1,4 +1,5 @@
 import './App.css';
+
 import NavBar from './components/Navbar/navbar';
 import Intro from './components/Intro/intro';
 import Skills from './components/Skills/Skills';
@@ -15,6 +16,7 @@ import E from './assets/DC/E.png';
 import F from './assets/DC/F.png';
 import G from './assets/DC/G.png';
 import H from './assets/DC/H.png';
+import { colors } from '@mui/material';
 
 function App() {
   const images1 = [A,B,C,D,];
@@ -26,6 +28,7 @@ function App() {
       <NavBar />
       <Intro />
       <Skills />
+      <h3 style={{fontSize: '2.5rem',fontWeight: '600',color: '#fff'}}>My <span style={{color:'yellow'}}>Portfolio</span></h3>
       <Work images={images1} title={"UI"} />
       <Work images={images2} title={"Digital Content"}/>
       <Contact />

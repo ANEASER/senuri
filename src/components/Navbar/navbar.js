@@ -1,19 +1,19 @@
 import React from 'react';
 import './navbar.css';
-import { Link } from 'react-scroll';
 import PhoneIcon from '@mui/icons-material/Phone';
 
 const NavBar = () => {
   return (
     <nav className='navbar'>
         <div className='destopMenu'>
-            <Link className='destopMenuListItem'>Home</Link>
-            <Link className='destopMenuListItem'>About</Link>
-            <Link className='destopMenuListItem'>Portfolio</Link>
+            <a className='destopMenuListItem' href='#intro' >Home</a>
+            <a className='destopMenuListItem' href='#skills' >About</a>
+            <a className='destopMenuListItem'href='#work' >Portfolio</a>
         </div>
+        
         <button className="btn" style={{ display: 'flex', alignItems: 'center' }}>
           <PhoneIcon style={{ marginRight: '8px' }} />
-          <span className='contact-text'>Contact me</span>
+          <a className='contact-text' href='#contact'>Contact me</a>
         </button>
     </nav>
   )

@@ -5,7 +5,7 @@ import DC from '../../assets/DC.jpeg';
 
 const Skills = () => {
   return (
-    <section>
+    <section id='skills'>
         <span className='skillTitle'>What <span style={{color:"yellow"}}>I do ?</span></span>
         <span className='skillDesc'></span>
         <div className='SkillBars'>

@@ -4,7 +4,7 @@ import './contact.css';
 const Contact = () => {
   return (
     <div id="contact">
-      <h1 className='contactPageTitle' style={{textAlign:'center'}}>Contact Me</h1>
+      <h1 className='contactPageTitle' style={{textAlign:'center'}}> <span style={{color:'yellow'}}>Contact</span> Me</h1>
       <span className='contactDesc'>Please fill out the form below to contact</span>
       <form className='contactForm'>
         <input type="text" className='name' placeholder='Your Name' />
