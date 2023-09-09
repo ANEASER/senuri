@@ -13,7 +13,7 @@ const NavBar = () => {
         </div>
         <button className="btn" style={{ display: 'flex', alignItems: 'center' }}>
           <PhoneIcon style={{ marginRight: '8px' }} />
-          Contact me
+          <span className='contact-text'>Contact me</span>
         </button>
     </nav>
   )

@@ -4,10 +4,15 @@
   align-items: center;
   padding: 1rem 2rem;
   height: 5rem;
+  position: -webkit-sticky;
   position: sticky;
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -1%;
+  top: 0; /* Make sure to specify the 'top' value */
+  z-index: 10; /* Ensure the navbar is above other elements */
+  background-color: rgba(24, 22, 22, 0.993);
 }
 
 
@@ -23,7 +28,7 @@
   transition: border-bottom 0.3s, color 0.3s; 
 }
 
-.active {
+.destopMenuListItem:active {
   color: yellow;
   padding-bottom: 0.5rem;
   border-bottom: 3px solid yellow;
@@ -32,7 +37,7 @@
 
 .btn {
     background: white;
-    border-radius: 5spx;
+    border-radius: 5px;
     color: #333;
     padding: 10px 20px; 
     text-decoration: none; 
@@ -45,4 +50,10 @@
 .btn:hover {
     background: #333; 
     color: rgb(224, 243, 56); 
+}
+
+@media screen and (max-width: 848px) {
+  .contact-text {
+    display: none;
+  }
 }
