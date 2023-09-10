@@ -9,9 +9,11 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('SERIVICE ID', 'template_id', form.current, 'public_key')
+    emailjs.sendForm('service_lhypz3b', 'template_g9ynkji', form.current, 'A67j2cTRewZxySg2w')
       .then((result) => {
           console.log(result.text);
+          e.target.reset();
+          alert('Message Sent, I will get back to you shortly')
       }, (error) => {
           console.log(error.text);
       });
@@ -22,9 +24,9 @@ const Contact = () => {
     <div id="contact">
       <h1 className='contactPageTitle' style={{textAlign:'center'}}> <span style={{color:'yellow'}}>Contact</span> Me</h1>
       <span className='contactDesc'>Please fill out the form below to contact</span>
-      <form className='contactForm' ref={form} >
-        <input type="text" className='name' placeholder='Your Name' />
-        <input type="email" className='email' placeholder='Your Email' />
+      <form className='contactForm' ref={form} onSubmit={sendEmail}>
+        <input type="text" className='name' placeholder='Your Name' name='from_name' />
+        <input type="email" className='email' placeholder='Your Email' name='from_email'/>
         <textarea className='msg' name="message" rows="5"></textarea> 
         <button type='submit' className='submitButton' value='Send' style={{textAlign:'center',marginTop:'1%'}}>Submit</button>
         <div className='links'>

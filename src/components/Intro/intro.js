@@ -1,6 +1,6 @@
 import React from "react";
 import "./intro.css";
-import bg from "../../assets/bg.png";
+import bg1 from "../../assets/bg1.png";
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 // Import the PDF file
@@ -26,7 +26,7 @@ const Intro = () => {
                 </button>
             </div>
             <div className="dp">
-                <img src={bg} alt="Portfolio" className="bg"/>
+                <img src={bg1} alt="Portfolio" className="bg"/>
             </div>
         </section>
     );
