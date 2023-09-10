@@ -20,7 +20,7 @@ const Skills = () => {
                 <img src={DC} alt="" className='skillBarImg' />
                 <div className='skillBarText'>
                     <h3>Digital Content Design</h3>
-                    <p>As a Former UI designer of <span style={{color:"yellow"}}>Bitsquad</span> I gained experience in this area.</p>
+                    <p>As a Former UI designer of Bitsquad I gained experience in this area.</p>
                 </div>
             </div>
         </div>

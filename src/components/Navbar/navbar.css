@@ -40,6 +40,14 @@ h4{
   border-bottom: 3px solid yellow;
 }
 
+.btn {
+  height: 50px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
 @media screen and (max-width: 848px) {
   .contact-text {
     display: none;

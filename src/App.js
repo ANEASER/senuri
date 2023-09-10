@@ -16,7 +16,6 @@ import E from './assets/DC/E.png';
 import F from './assets/DC/F.png';
 import G from './assets/DC/G.png';
 import H from './assets/DC/H.png';
-import { colors } from '@mui/material';
 
 function App() {
   const images1 = [A,B,C,D,];
